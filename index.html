@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.8)
+          ),
+          url(https://mk0ecialaskaarcu3ye8.kinstacdn.com/wp-content/uploads/2019/12/ECI-Architecture-Kendall-Auto-Wasilla-00002.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-warning text-center p-2 mt-2">TALLER MECANICO</h1>
+      <div class="row">
+        <div class="col">
+          <div class="bg-light rounded p-5 m-4">
+            <h2 class="text-center">Datos del Cliente</h2>
+            <div class="form-group">
+              <label class="fw-bold mt-2">Nombre Completo:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d1"
+                placeholder="nombre completo"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Direccion:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d2"
+                placeholder="Direccion"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Telefono:</label>
+              <input
+                type="number"
+                class="form-control"
+                id="d3"
+                placeholder="Telefono"
+              />
+            </div>
+            <h2 class="text-center mt-4">Datos del Vehiculo</h2>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Marca:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d4"
+                placeholder="Marca del vehiculo"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Modelo:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d5"
+                placeholder="modelo del coche"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Color:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d6"
+                placeholder="color del vehiculo"
+              />
+            </div>
+            <div class="form-group mt-2">
+              <label class="fw-bold">Placa:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="d7"
+                placeholder="placa del vehiculo"
+              />
+            </div>
+            <div class="form-group text-center">
+              <button class="btn btn-primary mt-4" id="reg">
+                Registrar Datos
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <table
+            class="table table-bordered mt-4 text-center bg-light"
+            id="mostrar1"
+          >
+            <thead>
+              <tr>
+                <th colspan="8" class="fs-3">Datos del Cliente</th>
+              </tr>
+              <tr>
+                <th>ID</th>
+                <th>Nombre Completo</th>
+                <th>Direccion</th>
+                <th>Telefono</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <table
+            class="table table-bordered mt-4 text-center bg-light"
+            id="mostrar2"
+          >
+            <thead>
+              <tr>
+                <th colspan="8" class="fs-3">Datos del Vehiculo del Cliente</th>
+              </tr>
+              <tr>
+                <th>ID</th>
+                <th>Marca del vehiculo</th>
+                <th>Modelo del vehiculo</th>
+                <th>Color del vehiculo</th>
+                <th>Placa del vehiculo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/cliente.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
